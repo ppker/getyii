@@ -44,13 +44,16 @@
     "2amigos/yii2-qrcode-helper": "~1.0",
     "kop/yii2-scroll-pager": "dev-master",
     "devgroup/yii2-tag-dependency-helper": "*",
-    "trntv/yii2-aceeditor": "dev-master"
+    "trntv/yii2-aceeditor": "dev-master",
+    "codeception/specify": "*",
+    "codeception/verify": "*"
   },
   "require-dev": {
     "yiisoft/yii2-codeception": "*",
     "yiisoft/yii2-debug": "*",
     "yiisoft/yii2-gii": "*",
-    "yiisoft/yii2-faker": "*"
+    "yiisoft/yii2-faker": "*",
+    "codeception/codeception": " 2.0.*"
   },
   "config": {
     "process-timeout": 1800

@@ -10,8 +10,7 @@ use yii\helpers\HtmlPurifier;
 <?php if ($model->status): ?>
 
 <div class="media-left">
-    <?php $img = "http://gravatar.com/avatar/" . md5($model->fromUser['email']) . "?s=48"; ?>
-    <?= Html::a(Html::img($img, ['class' => 'media-object']),
+    <?= Html::a(Html::img($model->fromUser->userAvatar, ['class' => 'media-object img-circle']),
         ['/user/default/show', 'username' => $model->fromUser['username']]
     ); ?>
 </div>

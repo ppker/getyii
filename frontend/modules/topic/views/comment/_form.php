@@ -31,17 +31,14 @@ use yiier\editor\EditorMdWidget;
         ]
     ]); ?>
 
-    <?= $form->errorSummary($model, [
-        'class' => 'alert alert-danger'
-    ]) ?>
-
     <?= $form->field($model, 'comment')->widget(EditorMdWidget::className(), [
-        'clientOptions' => [
-            'height' => 200,
-            'imageUpload' => true,
-            'placeholder' => '请尽量让自己的回复能够对别人有帮助',
-            'imageUploadURL' => Url::to(['/site/upload', 'field' => 'editormd-image-file']),
-        ]
+        'clientOptions' => [	
+            'height' => 200,	
+            'imageUpload' => true,	
+            'autoFocus' => false,
+            'placeholder' => '请尽量让自己的回复能够对别人有帮助',	
+            'imageUploadURL' => Url::to(['/site/upload', 'field' => 'editormd-image-file']),	
+        ]	
     ]) ?>
 
         <div class="form-group">
